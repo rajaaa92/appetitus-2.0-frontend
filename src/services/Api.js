@@ -9,7 +9,7 @@ class Api {
         'Content-Type': 'application/json'
     };
 
-    BASE_URL = '/api/recipes';
+    BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
     createHeaders() {
         return this.authToken ? {
